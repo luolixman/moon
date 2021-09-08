@@ -41,16 +41,25 @@
         h1 {
             font-size: 2em;
             margin: 0.67em 0;
-            padding-bottom:20px;
+            padding-bottom: 20px;
         }
-        #pin{
-            background:black;
-            color:#fff;
-            font-size:22px;
+        
+        #pin {
+            background: black;
+            color: #fff;
+            font-size: 22px;
+            margin-top: 20px;
         }
-        .b.layui-btn{
-            width:300px;
-            margin-top:30px;
+        
+        .b.layui-btn {
+            width: 300px;
+            margin-top: 30px;
+        }
+        
+        .t {
+            background: black;
+            color: #fff;
+            font-size: 22px;
         }
     </style>
 </head>
@@ -58,7 +67,8 @@
 <body>
     <div id="login">
         <h1>Welcome Login</h1>
-        <input type="password" required lay-verify="required" placeholder="Your Password" autocomplete="off" class="t layui-input" id="pin" placeholder="用户名" name="u" />
+        <input type="text" required lay-verify="required" placeholder="Your Useradmin" autocomplete="off" class="t layui-input">
+        <input type="password" required lay-verify="required" placeholder="Your Password" autocomplete="off" class="t layui-input" id="pin" name="u" />
         <button class="b layui-btn layui-btn-normal" onclick="login()">登录</button>
     </div>
 
